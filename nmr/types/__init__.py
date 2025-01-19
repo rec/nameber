@@ -30,6 +30,7 @@ def index_to_str(index: int) -> str:
     category, n = make_category(index)
     cls = NameableType.SUBCLASSES[category.name.lower()]
     t = cls.index_to_type(n)
+    print('XXXXX', t, type(t))
     return cls.type_to_str(t)
 
 
